@@ -1,0 +1,246 @@
+:root {
+    --gradient: linear-gradient(#ffff 0%, #4f4e92 100%);
+    --Lightgreen:#3d5f74;
+    --TextColor: #d4d3df;
+    --darkgray: #333249;
+    --white: #c8f8f5;
+}
+
+body {
+    background-color: var(--darkgray);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    transition: 1s;
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--TextColor);
+}
+
+header {
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    background: linear-gradient(to right,var(--white) 0%, var(--Lightgreen) 100%);
+    padding:10px;
+    /* border-bottom: #d4d3df 2px dashed; */
+    /* stroke-dasharray: 2px 30px; */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.nav>li {
+    padding: 10px;
+}
+
+
+
+h1, h2{
+    font-size: 300%;
+    font-weight: normal;
+    color: var(--Lightgreen);
+}
+
+.aboutme {
+
+    position: relative;
+    top:100px;
+    height:300px;
+    width:100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0)0% , #333249 100%),
+                linear-gradient(to right,var(--white) 0%, var(--Lightgreen) 100%);
+    margin-bottom: 100px;
+    padding: 0 10%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+                
+}
+
+.sub {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    flex-direction: column;
+
+}
+
+.subheading {
+    width: 60%;
+    position: relative;
+    color: var(--TextColor);
+    text-align: center;
+}
+#profile {
+    background: url(./profilePic.jpg);
+    border-radius: 15px;
+    height: 200px;
+    width:300px;
+    background-size: cover;
+}
+
+
+
+/* .aboutMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.aboutme {
+       z-index: -1;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    flex-direction: column;
+    padding-left: 10%; 
+} */
+
+
+/* #profile {
+
+    width:100px;
+    height: 100px;
+    object-fit: cover;
+    height:auto;
+    border-radius: 15px;
+}  */
+
+main {
+    display: flex;
+    flex-direction:row-reverse;
+    flex-wrap:wrap-reverse;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.projects {
+    flex: 1 1 350px;
+    display: flex;
+    border: 5px solid var(--TextColor);
+    border-radius: 15px;
+    height: 400px;
+    object-fit: cover;
+    margin: 15px;
+    background-size: cover; 
+    justify-content: space-around;
+    transition: 1s;
+}
+
+#first {
+    background-image: url("./PhotoFirst");
+}
+
+#second {
+    background-image: url("./PhotoSecond");
+
+}
+
+#third {
+    background-image: url("./PhotoThird");
+}
+
+#fourth {
+    background-image: url("./PhotoForth.jpg");
+}
+
+
+.Caption {
+    position: relative;
+    top:-1px;
+    width: 100%;
+    background: linear-gradient(to right,var(--white) 0%, var(--Lightgreen) 100%);
+    border-radius: 8px 8px 0 0;
+    /* border: 2px solid var(---gradient); */
+    height: 80px;
+    /* margin: 0; */
+    text-align: center;
+    line-height: 80px;
+    font-size: 200%;
+}
+
+#portfolio .Caption {
+    /* height: 100%; */
+    font-size: 400%;
+    align-self: center;
+    width: 80%;
+    /* line-height: 300px; */
+    background-color: none;
+    padding: 0 20px;
+    border-bottom:var(--TextColor) solid 2px;
+    background: none;
+    
+}
+
+#portfolio {
+    background: linear-gradient(to bottom,var(--white) 0%, var(--Lightgreen) 100%);
+}
+
+footer {
+    margin-top: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    background: linear-gradient(to right,var(--white) 0%, var(--Lightgreen) 100%);
+    align-items: center;
+    padding: 0 10% ;
+}
+
+/* #portfolio {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+} */
+
+.projects:hover {
+    flex-grow: 3;
+    box-shadow: inset 0 0 8px white, 0 0 20px var(--TextColor);
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .projects {
+        width: 98%;
+    }
+    .subheading {
+        left:0;
+        width: 400px;
+        text-align: center;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+    }
+}
