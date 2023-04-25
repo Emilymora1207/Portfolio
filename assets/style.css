@@ -110,12 +110,12 @@ main {
     transition: 1s;
 }
 
-#first {
-    background-image: url("./PhotoFirst");
+#weather {
+    background-image: url("./weatherProjectImage.png");
 }
 
-#second {
-    background-image: url("./PhotoSecond");
+#recipe {
+    background-image: url("./recipeHubImage.png");
 
 }
 
