@@ -119,14 +119,9 @@ main {
 
 }
 
-#third {
-    background-image: url("./PhotoThird");
+#business {
+    background-image: url("./businessPlannerImage.png");
 }
-
-#fourth {
-    background-image: url("./PhotoForth.jpg");
-}
-
 
 .Caption {
     position: relative;
